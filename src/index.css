@@ -50,7 +50,7 @@ button:hover{
   cursor: pointer;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .container{
     width: 50%;
     margin: auto;
@@ -62,30 +62,26 @@ button:hover{
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 425px) {
+  .container{
+    width: 80%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to top right, indigo, #4A96F0);
+  }
+}
+
+@media screen and (max-width: 320px) {
   .container{
     width: 90%;
-    margin: auto;
-    box-shadow: none;
-    margin-top: 1rem;
-    border: none;
-    background: linear-gradient(to top right, indigo, #4A96F0);
-    border-radius: .5rem;
-    padding-top: 1rem;
-  }
-  .degrees{
-    width: 80%;
-    aspect-ratio: 1/1;
-    margin: auto;
+    height: 90vh;
     display: flex;
-    align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  transition: 0.5s;
-  }
-  button{
-  margin-bottom: 1rem;
-  }
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to top right, grey, rgb(219, 216, 216));
+    }
 }
 
 
